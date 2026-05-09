@@ -135,7 +135,6 @@ form.addEventListener("submit", async function(event){
         <p><strong>Condition: </strong>${analysis.condition}</p>
         <p><strong>Usage: </strong>${analysis.usageRisk}</p>
         <p class="recommendation"><strong>Recommendation: </strong>${analysis.recommendation}</p>
-        // <p class="server-insight"><strong>Server Insight: </strong>${apiData.title}</p>
         </div>
         `;
     }
