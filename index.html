@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Before Buying Used Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="used_car_project_logo.png" alt="CarTrust Logo" class="logo">
+        <nav>
+            <h1>Car<span>Trust</span></h1>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Buy Used Cars Smarter</h2>
+            <p>
+                Analyze condition, maintenance risk, and reliability before buying a used car.
+            </p>
+        </section>
+
+        <section class="car-form-section">
+            <form>
+                <div class="input-group">
+                    <label for="brand">Car Brand</label>
+                    <input type="text" id="brand" placeholder="Enter car brand">
+                </div>
+                <div class="input-group">
+                    <label for="model">Model</label>
+                    <input type="text" id="model" placeholder="Enter model">
+                </div>
+                <div class="input-group">
+                    <label for="year">Year</label>
+                    <input type="number" id="year" placeholder="Enter manufacturing year">
+                </div>
+                <div class="input-group">
+                    <label for="kms">Kilometers Driven</label>
+                    <input type="number" id="kms" placeholder="Enter kilometers driven">
+                </div>
+                <div class="input-group">
+                    <label for="fuel">Fuel Type</label>
+                    <select id="fuel">
+                        <option value="">Select Fuel Type</option>
+                        <option value="Petrol">Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Electric">Electric</option>
+                        <option value="CNG">CNG</option>
+                    </select>
+                </div>
+                <button type="submit" id="analyze">Analyze Car</button>
+            </form>
+        </section>
+
+        <section class="result-section">
+            <h2>Analysis Report</h2>
+            <div id="result">
+                Result will appear here
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made for first-time used car buyers ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
