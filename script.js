@@ -15,6 +15,7 @@ function delay(){
     });
 }
 
+//DEMO FETCH API FOR ASYNC PRACTICE
 // async function getCarTips(){
 //     const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
 //     const data = await response.json();
