@@ -139,7 +139,7 @@ form.addEventListener("submit", async function(event){
         `;
     }
     catch(error){
-        console.log(error);
+        console.error(error);
         result.innerHTML = `<p class="error">Something Went Wrong</p>`;
         return;
     }
