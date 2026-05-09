@@ -60,6 +60,10 @@ function analyzeScore(year, kms, fuel){
         score -= 1;
     }
 
+    if(score < 0){
+        score = 0;
+    }
+
     let scoreColor;
 
     if(score>=8){
@@ -70,10 +74,6 @@ function analyzeScore(year, kms, fuel){
     }
     else{
         scoreColor = "red";
-    }
-
-    if(score < 0){
-        score = 0;
     }
 
     if(condition === "Excellent Condition"
