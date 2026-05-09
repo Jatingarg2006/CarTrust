@@ -15,11 +15,11 @@ function delay(){
     });
 }
 
-async function getCarTips(){
-    const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
-    const data = await response.json();
-    return data;
-}
+// async function getCarTips(){
+//     const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+//     const data = await response.json();
+//     return data;
+// }
 
 function analyzeScore(year, kms, fuel){
 
@@ -122,8 +122,8 @@ form.addEventListener("submit", async function(event){
     const analysis = analyzeScore(year, kms, fuel);
 
     try{
-        const apiData = await getCarTips();
-        console.log(apiData.title);
+        // const apiData = await getCarTips();
+        // console.log(apiData.title);
         
         result.innerHTML = `
         <div class="analysis-card">
@@ -134,7 +134,7 @@ form.addEventListener("submit", async function(event){
         <p><strong>Condition: </strong>${analysis.condition}</p>
         <p><strong>Usage: </strong>${analysis.usageRisk}</p>
         <p class="recommendation"><strong>Recommendation: </strong>${analysis.recommendation}</p>
-        <p class="server-insight"><strong>Server Insight: </strong>${apiData.title}</p>
+        // <p class="server-insight"><strong>Server Insight: </strong>${apiData.title}</p>
         </div>
         `;
     }
