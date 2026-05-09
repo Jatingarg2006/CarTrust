@@ -48,8 +48,6 @@ This project helped practice:
 
 ## 🚀 Live Demo
 
-Add your deployed GitHub Pages link here:
-
 ```text
 https://jatingarg2006.github.io/CarTrust/
 ```
