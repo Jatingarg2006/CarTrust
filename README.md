@@ -10,7 +10,7 @@ The project simulates a smart used-car analysis platform using HTML, CSS, and Ja
 
 - 🚘 Used car condition analysis
 - 📊 Dynamic car scoring system
-  - 🧠 Intelligent recommendation engine
+- 🧠 Intelligent recommendation engine
 - 🎨 Modern responsive UI
 - 🌙 Premium dark-themed design
 - 📱 Mobile responsive layout
