@@ -25,11 +25,6 @@ function delay(){
 function analyzeScore(year, kms, fuel){
 
     const currentYear = new Date().getFullYear();
-    if(year > currentYear){
-        result.innerHTML = '<p class="error"> Year cannot be greater than ${currentYear} </p>';
-        return;
-    }
-    
     const carAge = currentYear - year;
 
     let score = 10;
@@ -49,11 +44,7 @@ function analyzeScore(year, kms, fuel){
         score -= 5;
     }
 
-    if(kms < 0 ){
-        usageRisk = "Invalid Usage";
-        return;
-    }
-    else if(kms>0 && kms < 30000){
+    if(kms < 30000){
         usageRisk = "Low Usage";
     }
     else if(kms < 80000){
@@ -126,6 +117,16 @@ form.addEventListener("submit", async function(event){
     await delay();
     if(!brand || !model || !year || !kms || !fuel){
         result.innerHTML = `<p class="error">Please Fill All Fields ⚠️</p>`;
+        return;
+    }
+
+    if(year > currentYear){
+        result.innerHTML = '<p class="error"> Year cannot be greater than ${currentYear} </p>';
+        return;
+    }
+
+    if(kms < 0 ){
+        result.innerHTML = '<p class="error"> Kilometers driven cannot be negative </p>';
         return;
     }
 
