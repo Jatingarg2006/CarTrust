@@ -112,6 +112,7 @@ form.addEventListener("submit", async function(event){
     const year = Number(yearInput.value);
     const kms = Number(kmsInput.value);
     const fuel = fuelInput.value;
+    const currentYear = new Date().getFullYear();
     
     result.innerHTML = `<p class="loading">Analyzing Car Data...</p>`;
     await delay();
