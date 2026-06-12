@@ -120,20 +120,8 @@ form.addEventListener("submit", async function(event){
         result.innerHTML = `<p class="error">Please Fill All Fields ⚠️</p>`;
         return;
     }
-
-    if(year > currentYear){
-        result.innerHTML = '<p class="error"> Year cannot be greater than ${currentYear} </p>';
-        return;
-    }
-
-    if(kms < 0 ){
-        result.innerHTML = '<p class="error"> Kilometers driven cannot be negative </p>';
-        return;
-    }
-
-    console.log("Reached Analysis");
+    
     const analysis = analyzeScore(year, kms, fuel);
-    console.log("Analysis Completed");
     
     try{
         // const apiData = await getCarTips();
