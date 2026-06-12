@@ -25,7 +25,10 @@ function delay(){
 function analyzeScore(year, kms, fuel){
 
     const currentYear = new Date().getFullYear();
-    yearInput.max = currentYear;
+    if(year > currentYear){
+        result.innerHTML = '<p class="error"> Year cannot be greater than ${currentYear} </p>';
+        return;
+    }
     
     const carAge = currentYear - year;
 
@@ -46,7 +49,10 @@ function analyzeScore(year, kms, fuel){
         score -= 5;
     }
 
-    if(kms < 0 ) usageRisk = "Invalid Usage";
+    if(kms < 0 ){
+        usageRisk = "Invalid Usage";
+        return;
+    }
     else if(kms>0 && kms < 30000){
         usageRisk = "Low Usage";
     }
