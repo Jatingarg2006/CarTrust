@@ -130,8 +130,10 @@ form.addEventListener("submit", async function(event){
         return;
     }
 
+    console.log("Reached Analysis");
     const analysis = analyzeScore(year, kms, fuel);
-
+    console.log("Analysis Completed");
+    
     try{
         // const apiData = await getCarTips();
         // console.log(apiData.title);
