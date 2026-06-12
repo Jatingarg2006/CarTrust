@@ -9,6 +9,12 @@ const kmsInput = document.getElementById("kms");
 const fuelInput = document.getElementById("fuel");
 const anaylze_button = document.getElementById("analyze");
 
+const currentYear = new Date().getFullYear();
+
+for (let y = currentYear; y >= 1980; y--) {
+    yearInput.innerHTML += `<option value="${y}">${y}</option>`;
+}
+
 function delay(){
     return new Promise((resolve) => {
         setTimeout(() => {resolve("delayed");}, 2000);
